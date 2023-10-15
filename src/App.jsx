@@ -2,12 +2,12 @@ import React from "react";
 import "./app.css";
 import Profile from "./component/Profile/Profile";
 import Statistics from "./component/Statistics/Statistics";
-// import FriendsList from "./FriendsList/FriendsList";
-// import TransactionHistory from "./TransactionsHistory/TransactionsHistory";
+import FriendsList from "./component/FriendList/FriendList";
+// import TransactionHistory from "./component/TransactionsHistory/TransactionsHistory";
 import userData from "./component/Profile/user.json";
 import statisticsDataSource from "./component/Statistics/data.json";
-// import friendsDataSource from "./FriendsList/friends.json";
-// import transactionDataSource from "./TransactionsHistory/transactions.json";
+import friendsDataSource from "./component/FriendList/friends.json";
+// import transactionDataSource from "./component/TransactionsHistory/transactions.json";
 
 export default function App() {
   return (
@@ -23,8 +23,8 @@ export default function App() {
         statisticsData={statisticsDataSource}
         statisticsTitle={"Upload Stats"}
       />
-      {/* <FriendsList friendsData={friendsDataSource} />
-      <TransactionHistory transactionData={transactionDataSource} /> */}
+      <FriendsList friendsData={friendsDataSource} />
+      {/* <TransactionHistory transactionData={transactionDataSource} /> */}
     </>
   );
 }
