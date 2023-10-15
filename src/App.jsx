@@ -3,11 +3,11 @@ import "./app.css";
 import Profile from "./component/Profile/Profile";
 import Statistics from "./component/Statistics/Statistics";
 import FriendsList from "./component/FriendList/FriendList";
-// import TransactionHistory from "./component/TransactionsHistory/TransactionsHistory";
+import TransactionHistory from "./component/TransactionHistory/TransactionHistory";
 import userData from "./component/Profile/user.json";
 import statisticsDataSource from "./component/Statistics/data.json";
 import friendsDataSource from "./component/FriendList/friends.json";
-// import transactionDataSource from "./component/TransactionsHistory/transactions.json";
+import transactionDataSource from "./component/TransactionHistory/transactions.json";
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
         statisticsTitle={"Upload Stats"}
       />
       <FriendsList friendsData={friendsDataSource} />
-      {/* <TransactionHistory transactionData={transactionDataSource} /> */}
+      <TransactionHistory transactionData={transactionDataSource} />
     </>
   );
 }
