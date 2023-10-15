@@ -1,0 +1,31 @@
+.friends__list__item {
+align-items: center;
+background-color: #fff;
+border-radius: 4px;
+display: flex;
+width: 320px;
+margin: 10% auto;
+padding: 15px ;
+}
+
+.friends__list__itemIsOnline {
+width: 20px;
+height: 20px;
+background-color: #be1818;
+border-radius: 50%;
+}
+
+.friends__list__itemAvatar {
+width: 100px;
+margin-left: 16px;
+background-image: url('./OIP.jpg');
+background-size: cover;
+background-color: transparent;
+border-radius: 10px;
+}
+
+.friends__list__itemName {
+font-size: 30px;
+font-weight: 900;
+margin-left: 12px;
+}
